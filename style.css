@@ -25,8 +25,28 @@ header nav a {
   padding-bottom: 50px;
 }
 
-#welcome .imgbox {
-  padding-right: 60px;
-  width: 700px;
-  height: 700px;
+#services {
+  padding-top: 50px;
+}
+#services .textbox {
+  text-align: center;
+}
+#services .textbox h2 {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+#services .textbox h4 {
+  color: #6a6a6a;
+  padding-bottom: 45px;
+}
+#services .icon {
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #ffc800;
+  padding: 30px;
+  width: 120px;
+  height: 120px;
+  font-size: 55px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
