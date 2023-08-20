@@ -26,6 +26,8 @@ header nav a {
 }
 
 #services {
+  display: flex;
+  justify-content: space-evenly;
   padding-top: 50px;
 }
 #services .textbox {
@@ -49,4 +51,7 @@ header nav a {
   height: 120px;
   font-size: 55px;
   color: white;
+}
+#services ul li {
+  padding-left: 65px;
 }/*# sourceMappingURL=style.css.map */
