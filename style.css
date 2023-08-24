@@ -98,4 +98,32 @@ header nav a {
 #portfolio .imgbox img {
   width: 350px;
   height: 220px;
+}
+
+#about .textbox h1 {
+  font-size: 45px;
+  padding: 45px 0 15px;
+  font-weight: 700;
+}
+#about .textbox h1, #about .textbox h6 {
+  text-align: center;
+}
+#about .textbox h6 {
+  font-size: 20px;
+  color: #6a6a6a;
+  padding-bottom: 50px;
+}
+#about .textbox h2, #about .textbox h4 {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 5px 0;
+}
+#about .textbox p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+#about .imgbox img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
