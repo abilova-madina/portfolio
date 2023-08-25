@@ -128,48 +128,64 @@ header nav a {
   border-radius: 50%;
 }
 
-#amazing .textbox {
+#team {
+  background-color: #f8f9fa;
+}
+#team .textbox {
   text-align: center;
 }
-#amazing .textbox h3 {
+#team .textbox h3 {
   font-size: 35px;
   font-weight: 700;
 }
-#amazing .textbox h4 {
+#team .textbox h4 {
   color: #6a6a6a;
   font-size: 20px;
   padding: 20px 0;
 }
-#amazing .textbox h2 {
+#team .textbox h2 {
   font-size: 30px;
   font-weight: 700;
   padding: 25px 0 10px;
 }
-#amazing .textbox h5 {
+#team .textbox h5 {
   color: #6a6a6a;
   font-size: 20px;
   padding-bottom: 15px;
 }
-#amazing .textbox h6 {
+#team .textbox h6 {
   font-size: 25px;
   color: #6a6a6a;
   padding: 40px 0 20px;
 }
-#amazing .imgbox img {
+#team .imgbox img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 8px solid #dfe0e1;
 }
-#amazing ul {
+#team ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#amazing ul li {
+#team ul li {
   font-size: 25px;
   background-color: white;
   color: #000000;
   border: 4px solid #ffffff;
   margin: 0 15px;
+}
+
+#facebook .one {
+  width: 200px;
+  height: 200px;
+}
+#facebook .two {
+  width: 170px;
+  height: 170px;
+}
+#facebook .three {
+  width: 170px;
+  height: 200px;
 }/*# sourceMappingURL=style.css.map */
