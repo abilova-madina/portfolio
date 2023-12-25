@@ -11,18 +11,26 @@ a:hover {
 }
 
 header {
+  position: fixed;
+  z-index: 2;
   padding: 20px 0;
   background-color: #212529;
+  width: 100%;
 }
 header .imgbox {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 20px;
 }
 header nav a {
   font-size: 20px;
   color: #8c8999;
   margin-right: 30px;
   padding-bottom: 50px;
+}
+
+#welcome .img {
+  width: 50%;
+  height: 90%;
 }
 
 #services {
