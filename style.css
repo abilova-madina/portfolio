@@ -26,7 +26,10 @@ header nav a {
   color: #aeaeb0;
   margin-right: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+  header {
+    width: 90%;
+  }
   header nav a {
     display: none;
   }
@@ -62,8 +65,7 @@ header nav a {
     background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
     background-position: center center;
     background-size: cover;
-    height: 150%;
-    width: 150%;
+    height: 100vh;
   }
   #welcome .textbox {
     padding-top: 123px;
