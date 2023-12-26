@@ -15,6 +15,7 @@ header {
   padding: 30px 0;
   background-color: #212529;
   width: 100%;
+  z-index: 2;
 }
 header .imgbox {
   width: 150px;
