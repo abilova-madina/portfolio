@@ -366,4 +366,126 @@ header nav a {
   width: 120px;
   height: 140px;
   padding: 75px 0;
+}
+
+#website {
+  padding: 20px 0;
+}
+#website .textbox h4 {
+  margin-top: 15px;
+}
+#website .textbox h3 {
+  padding: 0 15px 0 0;
+  display: inline-block;
+  margin-top: 15px;
+}
+#website ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#website ul li {
+  font-size: 20px;
+  background-color: #1d1735;
+  color: white;
+  border: 12px solid #1d1735;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  #website .textbox {
+    display: flex;
+    justify-content: center;
+  }
+  #website ul li {
+    font-size: 17px;
+    padding: 20px 0;
+  }
+}
+#website .textbox h4 {
+  margin-top: 15px;
+}
+#website .textbox h3 {
+  padding: 0 15px 0 0;
+  display: inline-block;
+  margin-top: 15px;
+}
+#website ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#website ul li {
+  font-size: 20px;
+  background-color: #1d1735;
+  color: white;
+  border: 12px solid #1d1735;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  #website .textbox {
+    display: flex;
+    justify-content: center;
+  }
+  #website ul li {
+    font-size: 17px;
+  }
+}
+
+#contact {
+  padding: 65px 0;
+  background-color: #212529;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+}
+#contact .textbox {
+  text-align: center;
+}
+#contact .textbox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  padding: 65px 0 20px;
+}
+#contact .textbox h3 {
+  color: #757575;
+  padding-bottom: 35px;
+}
+#contact .box {
+  padding-bottom: 30px;
+}
+#contact .box .add input {
+  color: rgba(0, 0, 0, 0.1764705882);
+  font-size: 18px;
+  padding: 15px;
+  width: 550px;
+  height: 65px;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+#contact .demo .add input {
+  font-size: 20px;
+  width: 550px;
+  height: 235px;
+  color: rgba(0, 0, 0, 0.1764705882);
+  font-weight: 700;
+  padding-bottom: 180px;
+}
+#contact .box .btn {
+  opacity: 0.5;
+  padding: 20px 55px;
+  background-color: #c19e1d;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  #contact {
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+    height: 100%;
+    width: 100%;
+  }
+  #contact .box .btn {
+    margin-top: 35px;
+  }
 }/*# sourceMappingURL=style.css.map */
