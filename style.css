@@ -179,13 +179,13 @@ header nav a {
 }
 #portfolio .imgbox img {
   width: 358px;
-  height: 252px;
+  height: 256px;
 }
 #portfolio .icon i {
   color: white;
   position: absolute;
   width: 28%;
-  height: 43%;
+  height: 44%;
   padding-left: 155px;
   padding-top: 95px;
   font-size: 55px;
@@ -298,6 +298,7 @@ header nav a {
 }
 
 #team {
+  padding: 15px 0;
   background-color: #f8f9fa;
 }
 #team .textbox {
