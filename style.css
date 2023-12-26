@@ -108,32 +108,91 @@ header nav a {
   height: 220px;
 }
 
-#about .textbox h1 {
+#about {
+  padding-bottom: 50px;
+}
+#about .textboxx {
+  padding: 10px 0 55px;
+}
+#about .textboxx h1 {
   font-size: 45px;
   padding: 45px 0 15px;
   font-weight: 700;
 }
-#about .textbox h1, #about .textbox h6 {
-  text-align: center;
-}
-#about .textbox h6 {
-  font-size: 20px;
-  color: #6a6a6a;
+#about .textboxx h4 {
+  color: #969696;
   padding-bottom: 50px;
-}
-#about .textbox h2, #about .textbox h4 {
   font-size: 20px;
-  font-weight: 800;
-  padding: 5px 0;
 }
-#about .textbox p {
-  font-size: 20px;
-  line-height: 1.3;
+#about .textboxx h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+#about .textboxx h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+#about .textboxx h6 {
+  font-size: 25px;
+  color: #969696;
+  line-height: 1.2;
+}
+#about .textboxtwo {
+  padding: 20px 0 55px;
+}
+#about .textboxtwo h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+#about .textboxtwo h5 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+#about .textboxtwo p {
+  font-size: 25px;
+  color: #969696;
+  line-height: 1.2;
 }
 #about .imgbox img {
-  width: 200px;
-  height: 200px;
   border-radius: 50%;
+  border: 8px solid #ebebeb;
+  width: 180px;
+  height: 180px;
+}
+#about .box .btn {
+  color: white;
+  font-size: 20px;
+  padding: 40px 55px;
+  border-radius: 50%;
+  background-color: #ffc800;
+  border-radius: 50%;
+  border: 8px solid #ebebeb;
+  margin-left: 70px;
+}
+#about .bottomline {
+  border-style: solid;
+  height: 150px;
+  border-right-color: #eaeaea;
+  border-right-width: 2px;
+  margin-right: 87px;
+}
+#about .row {
+  display: flex;
+  gap: 20px;
+}
+#about .row .emptycell {
+  flex: 1;
+}
+#about .row .text {
+  flex: 1;
+}
+#about .row .center {
+  width: auto;
+}
+#about .rowreversed {
+  flex-direction: row-reverse;
 }
 
 #team {
