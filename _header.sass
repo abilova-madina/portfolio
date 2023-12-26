@@ -1,7 +1,6 @@
 header
     position: fixed
-    z-index: 2
-    padding: 20px 0
+    padding: 30px 0
     background-color: #212529
     width: 100%
     .imgbox
@@ -9,8 +8,11 @@ header
         height: 20px
     nav
         a
-
             font-size: 20px
-            color: #8c8999
+            color: #aeaeb0
             margin-right: 30px
-            padding-bottom: 50px
+
+    @media screen and ( max-width: 768px )
+        nav
+            a
+                display: none
