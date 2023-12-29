@@ -29,9 +29,20 @@ header nav a {
 @media screen and (max-width: 900px) {
   header {
     width: 90%;
+    position: fixed;
   }
   header nav a {
     display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  header {
+    position: fixed;
+    width: 47%;
+    height: 70px;
+  }
+  header .imgbox {
+    width: 130px;
   }
 }
 
@@ -104,6 +115,12 @@ header nav a {
   font-size: 20px;
   padding: 10px 30px;
   background-color: #ffc800;
+}
+@media screen and (max-width: 300px) {
+  #welcome .textbox h3 {
+    padding-bottom: 50px;
+    font-size: 20px;
+  }
 }
 
 #services {
