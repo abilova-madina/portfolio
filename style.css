@@ -122,6 +122,11 @@ header nav a {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 765px) {
+  #welcome {
+    width: 250px;
+  }
+}
 
 #services {
   padding: 40px 0 60px;
@@ -315,6 +320,14 @@ header nav a {
 #about .rowreversed {
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 767px) {
+  #about .imgbox img {
+    border-radius: 50%;
+    border: 8px solid #ebebeb;
+    width: 100px;
+    height: 100px;
+  }
+}
 
 #team {
   padding: 15px 0;
@@ -417,13 +430,9 @@ header nav a {
     display: flex;
     justify-content: center;
   }
-  #website ul li {
-    font-size: 17px;
-    padding: 20px 0;
-  }
 }
 #website .textbox h4 {
-  margin-top: 15px;
+  margin-bottom: 20px;
 }
 #website .textbox h3 {
   padding: 0 15px 0 0;
