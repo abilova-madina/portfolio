@@ -54,14 +54,14 @@
     .bottomline
         border-style: solid
         height: 150px
-        border-right-color: #eaeaea
+        border-right-color: #871414
         border-right-width: 2px
         margin-right: 87px
     .row
         display: flex
         gap: 20px
         .emptycell
-            flex: 1
+            // flex: 1
         .text
             flex: 1
         .center
@@ -70,10 +70,15 @@
     .rowreversed
         flex-direction: row-reverse
 
-    @media screen and ( max-width: 767px  )
+    @media screen and ( max-width: 768px  )
+        .box
+            .btn
+                font-size: 13px
+                font-weight: 800
+                padding: 10px 20px
+                margin-right: 45px
+                margin-left: 15px
         .imgbox
             img
-                border-radius: 50%
-                border: 8px solid #ebebeb
                 width: 100px
                 height: 100px
