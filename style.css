@@ -64,7 +64,7 @@ header nav a {
   margin-top: 30px;
   color: white;
   font-size: 25px;
-  padding: 35px 35px;
+  padding: 15px 35px;
   background-color: #ffc800;
   font-weight: 700;
 }
@@ -78,61 +78,6 @@ header nav a {
   padding-bottom: 30px;
   font-size: 75px;
   font-weight: 800;
-}
-@media screen and (max-width: 768px) {
-  #welcome {
-    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
-    background-size: cover;
-    height: 100vh;
-  }
-  #welcome .textbox {
-    padding-top: 123px;
-  }
-  #welcome .textbox h3 {
-    padding: 95px 0 25px;
-    font-size: 30px;
-    font-weight: 400;
-  }
-  #welcome .textbox h4 {
-    font-size: 68px;
-  }
-  #welcome .textbox .btn {
-    color: white;
-    font-size: 20px;
-    padding: 10px 30px;
-    background-color: #ffc800;
-  }
-}
-@media screen and (max-width: 900px) {
-  #welcome {
-    height: 160vh;
-    width: 100vw;
-  }
-}
-#welcome .textbox h3 {
-  padding-bottom: 50px;
-  font-size: 30px;
-  font-weight: 400;
-}
-#welcome .textbox h4 {
-  font-size: 65px;
-}
-#welcome .textbox .btn {
-  color: white;
-  font-size: 20px;
-  padding: 10px 30px;
-  background-color: #ffc800;
-}
-@media screen and (max-width: 300px) {
-  #welcome .textbox h3 {
-    padding-bottom: 50px;
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 765px) {
-  #welcome {
-    width: 250px;
-  }
 }
 
 #services {
@@ -307,13 +252,16 @@ header nav a {
 #about .bottomline {
   border-style: solid;
   height: 150px;
-  border-right-color: #871414;
+  border-right-color: #ebebeb;
   border-right-width: 2px;
   margin-right: 87px;
 }
 #about .row {
   display: flex;
   gap: 20px;
+}
+#about .row .emptycell {
+  flex: 1;
 }
 #about .row .text {
   flex: 1;
@@ -332,7 +280,7 @@ header nav a {
     margin-right: 45px;
     margin-left: 15px;
   }
-  #about .imgbox img {
+  #about .imgbox {
     width: 100px;
     height: 100px;
   }
