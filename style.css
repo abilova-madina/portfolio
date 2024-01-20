@@ -189,100 +189,99 @@ header nav a {
 #about {
   padding-bottom: 50px;
 }
-#about .textboxx {
+#about .box, #about .Divbox {
   padding: 10px 0 55px;
 }
-#about .textboxx h1 {
+#about .box h1, #about .Divbox h1 {
   font-size: 45px;
   padding: 45px 0 15px;
   font-weight: 700;
 }
-#about .textboxx h4 {
+#about .box h4, #about .Divbox h4 {
   color: #969696;
-  padding-bottom: 50px;
   font-size: 20px;
 }
-#about .textboxx h2 {
+#about .box h2, #about .Divbox h2 {
   font-size: 25px;
   font-weight: 600;
+  padding-bottom: 10px;
+  margin: 0 110px;
 }
-#about .textboxx h3 {
+#about .box h3, #about .Divbox h3 {
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 15px;
+  margin: 0 110px;
 }
-#about .textboxx h6 {
-  font-size: 25px;
+#about .box h5, #about .Divbox h5 {
+  font-size: 19px;
   color: #969696;
-  line-height: 1.2;
+  line-height: 1.8;
+  margin: 0 110px;
 }
-#about .textboxtwo {
-  padding: 20px 0 55px;
-}
-#about .textboxtwo h4 {
-  font-size: 25px;
-  font-weight: 600;
-}
-#about .textboxtwo h5 {
-  font-size: 30px;
-  font-weight: 700;
-  padding-bottom: 15px;
-}
-#about .textboxtwo p {
-  font-size: 25px;
+#about .box h6, #about .Divbox h6 {
+  font-size: 19px;
   color: #969696;
-  line-height: 1.2;
+  line-height: 1.5;
+  margin: 0 110px;
 }
-#about .imgbox img {
+#about .imgbox {
+  position: absolute;
+  left: 44%;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e9ecef;
   border-radius: 50%;
-  border: 8px solid #ebebeb;
-  width: 180px;
-  height: 180px;
+  overflow: hidden;
 }
-#about .box .btn {
-  color: white;
-  font-size: 20px;
-  padding: 40px 55px;
+#about .Bigbox .boxes {
+  position: relative;
+  left: 88%;
+  padding-top: 30px;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #e9ecef;
   border-radius: 50%;
   background-color: #ffc800;
-  border-radius: 50%;
-  border: 8px solid #ebebeb;
-  margin-left: 70px;
 }
-#about .bottomline {
-  border-style: solid;
-  height: 150px;
-  border-right-color: #ebebeb;
-  border-right-width: 2px;
-  margin-right: 87px;
+#about .Bigbox h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px 48px;
 }
-#about .row {
-  display: flex;
-  gap: 20px;
-}
-#about .row .emptycell {
-  flex: 1;
-}
-#about .row .text {
-  flex: 1;
-}
-#about .row .center {
-  width: auto;
-}
-#about .rowreversed {
-  flex-direction: row-reverse;
-}
-@media screen and (max-width: 768px) {
-  #about .box .btn {
-    font-size: 13px;
-    font-weight: 800;
-    padding: 10px 20px;
-    margin-right: 45px;
-    margin-left: 15px;
+@media (max-width: 299px) {
+  #about .Bigbox .boxes {
+    left: 0;
   }
-  #about .imgbox {
-    width: 100px;
-    height: 100px;
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  #about .box h2, #about .box h3, #about .box h5, #about .box h6 {
+    margin: 0 20px 0 110px;
+  }
+  #about .box .imgbox {
+    left: 0;
+    width: 90px;
+    height: 90px;
+    border: 7px solid #e9ecef;
+  }
+  #about .box .divtext h2, #about .box .divtext h3, #about .box .divtext h6 {
+    text-align: start;
+  }
+  #about .Bigbox .boxes {
+    left: 0;
+    padding-top: 30px;
+    width: 90px;
+    height: 90px;
+    border: 7px solid #e9ecef;
+  }
+  #about .Bigbox h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    bottom: 45%;
+    right: 35%;
   }
 }
 
