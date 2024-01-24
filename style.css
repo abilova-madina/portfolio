@@ -164,6 +164,15 @@ header nav a {
   color: #6a6a6a;
   line-height: 1.4;
 }
+@media screen and (max-width: 602px) {
+  #services .textbox h4 {
+    padding-bottom: 40px;
+  }
+  #services .textbox h6 {
+    padding-bottom: 25px;
+  }
+}
+
 #portfolio {
   padding: 40px 0 60px;
   background-color: #f6f6f6;
