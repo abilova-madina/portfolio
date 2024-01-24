@@ -420,15 +420,15 @@ header nav a {
 }
 
 #website {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 #website .textbox h4 {
-  margin-top: 15px;
+  padding-top: 10px;
 }
 #website .textbox h3 {
   padding: 0 15px 0 0;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 #website ul {
   display: flex;
@@ -436,48 +436,29 @@ header nav a {
   justify-content: center;
 }
 #website ul li {
-  font-size: 20px;
+  font-size: 18px;
+  cursor: pointer;
   background-color: #1d1735;
   color: white;
   border: 12px solid #1d1735;
-  border-radius: 50%;
+  border-radius: 30%;
   margin: 0 10px;
 }
-@media screen and (max-width: 768px) {
+#website ul li i {
+  cursor: pointer;
+}
+@media screen and (max-width: 751px) {
   #website .textbox {
     display: flex;
     justify-content: center;
   }
+}
+#website .icon ul li {
+  margin-top: 20px;
+  border-radius: 30px;
 }
 #website .textbox h4 {
-  margin-bottom: 20px;
-}
-#website .textbox h3 {
-  padding: 0 15px 0 0;
-  display: inline-block;
   margin-top: 15px;
-}
-#website ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#website ul li {
-  font-size: 20px;
-  background-color: #1d1735;
-  color: white;
-  border: 12px solid #1d1735;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-@media screen and (max-width: 768px) {
-  #website .textbox {
-    display: flex;
-    justify-content: center;
-  }
-  #website ul li {
-    font-size: 17px;
-  }
 }
 
 #contact {
@@ -499,24 +480,23 @@ header nav a {
   padding-bottom: 35px;
 }
 #contact .box {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 #contact .box .add input {
   color: rgba(0, 0, 0, 0.1764705882);
   font-size: 18px;
-  padding: 15px;
-  width: 550px;
-  height: 65px;
-  margin: 0 0 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 0 25px;
   font-weight: 700;
 }
-#contact .demo .add input {
+#contact .demo input {
   font-size: 20px;
-  width: 550px;
-  height: 235px;
+  width: 100%;
   color: rgba(0, 0, 0, 0.1764705882);
   font-weight: 700;
-  padding-bottom: 180px;
+  padding: 18px;
+  padding-bottom: 195px;
 }
 #contact .box .btn {
   opacity: 0.5;
@@ -526,13 +506,11 @@ header nav a {
   font-size: 20px;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   #contact {
     background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
-    height: 100%;
-    width: 100%;
   }
   #contact .box .btn {
-    margin-top: 35px;
+    margin: 56px 45px 0;
   }
 }/*# sourceMappingURL=style.css.map */
