@@ -10,33 +10,55 @@ a:hover {
   color: #ecd544;
 }
 
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+  cursor: pointer;
+}
+
 header {
   position: fixed;
-  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #212529;
-  width: 100%;
-  z-index: 2;
+  height: 70px;
+  padding: 10px 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 header .imgbox {
   width: 150px;
-  height: 20px;
 }
 header .imgbox img {
   cursor: pointer;
 }
-header nav a {
-  font-size: 20px;
-  color: #aeaeb0;
-  margin-right: 30px;
+header .btn {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.6470588235);
+  display: flex;
+  align-items: center;
+  display: none;
+  padding: 2px;
+  opacity: 0.6;
+}
+header .btn h5 {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+header .btn h5 .icon {
+  margin-left: 7px;
   cursor: pointer;
 }
-@media screen and (max-width: 900px) {
-  header {
-    position: fixed;
-  }
-  header nav a {
-    display: none;
-  }
+header nav a {
+  font-size: 20px;
+  color: white;
+  margin-right: 30px;
+  cursor: pointer;
 }
 @media screen and (max-width: 300px) {
   header {
@@ -46,6 +68,14 @@ header nav a {
   }
   header .imgbox {
     width: 130px;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    position: fixed;
+  }
+  header nav a {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -426,45 +456,44 @@ header nav a {
 }
 
 #website {
-  padding: 10px 0;
+  padding: 22px 0;
 }
-#website .textbox h4 {
-  padding-top: 10px;
+#website .menu a {
+  color: #414141;
+  font-size: 19px;
 }
-#website .textbox h3 {
-  padding: 0 15px 0 0;
-  display: inline-block;
-  margin-top: 30px;
+#website .menu span {
+  margin: 0 20px;
 }
-#website ul {
+#website .menu ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
-#website ul li {
-  font-size: 18px;
+#website .menu ul li .icon {
+  font-size: 20px;
   cursor: pointer;
-  background-color: #1d1735;
+  background-color: #1a1919;
   color: white;
-  border: 12px solid #1d1735;
-  border-radius: 30%;
-  margin: 0 10px;
-}
-#website ul li i {
-  cursor: pointer;
-}
-@media screen and (max-width: 751px) {
-  #website .textbox {
-    display: flex;
-    justify-content: center;
-  }
-}
-#website .icon ul li {
-  margin-top: 20px;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+  width: 40px;
+  height: 40px;
 }
-#website .textbox h4 {
-  margin-top: 15px;
+#website .menu ul li .icon:hover {
+  background-color: #424649;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  #website .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  #website .menu ul {
+    margin: 15px 0;
+  }
 }
 
 #contact {
