@@ -77,6 +77,23 @@ header nav a {
   header nav a {
     display: none;
   }
+  header .btn {
+    border-radius: 5px;
+    font-size: 14px;
+    color: #9999ad;
+    margin: 0 0 0 50px;
+    padding: 7px 11px;
+    font-weight: 600;
+    border: 1px solid #9999ad;
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    position: relative;
+    left: 140px;
+  }
+  header .btn i {
+    margin: 0 0 0 10px;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
