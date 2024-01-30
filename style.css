@@ -90,28 +90,28 @@ header nav a {
   background-size: cover;
   height: 140vh;
 }
-#welcome .textbox {
+#welcome .box .textbox {
   text-align: center;
   color: white;
 }
-#welcome .textbox .btn {
+#welcome .box .textbox h3 {
+  margin-top: 150px;
+  padding: 170px 0 35px;
+  font-size: 35px;
+  font-weight: 400;
+}
+#welcome .box h4 {
+  margin-bottom: 40px;
+  font-size: 75px;
+  font-weight: 800;
+}
+#welcome .box .btn {
   margin-top: 30px;
   color: white;
   font-size: 25px;
   padding: 15px 35px;
   background-color: #ffc800;
   font-weight: 700;
-}
-#welcome .textbox h3 {
-  margin-top: 150px;
-  padding: 170px 0 35px;
-  font-size: 35px;
-  font-weight: 400;
-}
-#welcome .textbox h4 {
-  margin-bottom: 40px;
-  font-size: 75px;
-  font-weight: 800;
 }
 @media screen and (max-width: 455px) {
   #welcome .textbox h3 {
@@ -128,10 +128,16 @@ header nav a {
     padding: 20px 45px;
     background-color: #ffc800;
   }
+  #welcome .textbox .btn h2 {
+    cursor: pointer;
+  }
 }
-@media screen and (max-width: 768px) {
-  #welcome {
-    width: 400px;
+@media screen and (max-width: 576px) {
+  #welcome .box .textbox h3 {
+    font-size: 35px;
+  }
+  #welcome .box .textbox h4 {
+    font-size: 70px;
   }
 }
 
@@ -209,6 +215,7 @@ header nav a {
   background-color: #f6f6f6;
 }
 #portfolio .textboox {
+  padding: 40px;
   text-align: center;
 }
 #portfolio .textboox h1 {
@@ -227,49 +234,49 @@ header nav a {
   margin: 0 0 18px 1px;
 }
 #portfolio .textbox h2 {
-  font-size: 25px;
-  font-weight: 700;
-  padding: 25px 0 15px;
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 13px;
 }
 #portfolio .textbox h4 {
   color: #6a6a6a;
   font-size: 20px;
   line-height: 1.3;
-  padding-bottom: 25px;
 }
-#portfolio .imgbox {
-  color: #dc9223;
+#portfolio .box {
+  position: relative;
 }
-#portfolio .imgbox img {
-  width: 358px;
-  height: 256px;
-}
-#portfolio .icon i {
-  color: white;
+#portfolio .box .icon {
   position: absolute;
-  width: 28%;
-  height: 44%;
-  padding-left: 155px;
-  padding-top: 95px;
-  font-size: 55px;
-  font-weight: 700;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
+  cursor: pointer;
 }
-#portfolio .icon i:hover {
-  opacity: 0.8;
-  background-color: #e4c31c;
+#portfolio .box .icon:hover {
+  background-color: #ffc800;
+  opacity: 0.9;
+  transition: 0.5s;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  #portfolio .imgbox {
+  #portfolio .imgbox img {
     padding-right: 70px;
   }
-  #portfolio .imgbox img {
-    width: 250px;
-    height: 200px;
-  }
   #portfolio .textbox {
-    width: 200px;
-    height: 100px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 115px;
+    width: 290px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #portfolio .box .imgbox {
+    width: auto;
   }
 }
 
