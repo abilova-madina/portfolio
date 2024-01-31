@@ -368,6 +368,7 @@ header .menu nav a {
 }
 #about .box .imgbox {
   position: absolute;
+  left: 470px;
   width: 170px;
   height: 170px;
   border: solid #e9ecef;
@@ -437,103 +438,114 @@ header .menu nav a {
 }
 
 #team {
-  padding: 15px 0;
-  background-color: #f8f9fa;
+  background-color: #f6f6f6;
+  padding: 90px 75px;
 }
 #team .textbox {
   text-align: center;
 }
-#team .textbox h3 {
-  font-size: 35px;
-  font-weight: 700;
-  margin-top: 80px;
-}
-#team .textbox h4 {
-  color: #6a6a6a;
-  font-size: 20px;
-  padding: 20px 0;
-}
 #team .textbox h2 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   padding: 25px 0 10px;
 }
-#team .textbox h5 {
-  color: #6a6a6a;
-  font-size: 17px;
-  padding-bottom: 15px;
+#team .textbox h3 {
+  font-size: 45px;
+  font-weight: 700;
+  padding: 20px 0;
 }
-#team .textbox h6 {
+#team .textbox h3:hover {
+  cursor: text;
+}
+#team .textbox h4 {
+  color: #969696;
+  font-size: 18px;
+  padding-bottom: 60px;
+  font-style: italic;
+}
+#team .textbox h5 {
+  color: #969696;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+#team .textbox p {
   width: 70%;
   color: #6c757d;
-  padding: 45px 0 70px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
   margin: 0 auto;
+  padding-top: 60px;
 }
-#team .imgbox {
+#team .box .textbox {
+  text-align: center;
+  margin: 15px 0;
+}
+#team .box .imgbox {
   width: 220px;
 }
-#team .imgbox img {
-  margin-bottom: 20px;
-  border-radius: 50%;
+#team .box .imgbox img {
+  border-radius: 100%;
   border: 8px solid #dfe0e1;
 }
-#team ul {
+#team .box ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
-#team ul li {
-  font-size: 18px;
-  background-color: #1d1735;
+#team .box ul li {
+  margin: 9px;
+}
+#team .box ul li .icon {
+  border-radius: 40px;
+  background-color: #1f1e1e;
+  cursor: pointer;
   color: white;
-  border: 12px solid #1d1735;
-  border-radius: 50%;
-  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
 }
-#team ul li .linkedin {
-  padding: 0 2px 0;
+#team .box ul li .icon:hover {
+  background-color: #424649;
+  transition: 0.5s;
 }
-#team ul li .facebook {
-  padding: 0 4px 0;
+#team .box ul li .icon i {
+  cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-  #team .imgbox {
-    margin-top: 60px;
+@media (max-width: 999px) {
+  #team .textbox p {
+    padding: 62px 0;
+  }
+  #team .box .imgbox {
+    margin-top: 25px;
   }
 }
 
 #facebook {
-  padding: 60px 0;
+  padding: 50px 0;
 }
-#facebook .box {
-  padding: 0 50px;
+#facebook img {
+  cursor: pointer;
 }
-#facebook .box .imgbox {
-  width: 220px;
+#facebook .imgbox {
+  width: 180px;
 }
-#facebook .box .one {
-  width: 220px;
-  margin-bottom: 20px;
+#facebook .three {
+  width: 150px;
 }
-#facebook .box .two {
-  width: 190px;
-  margin-top: 20px;
-}
-@media screen and (max-width: 576px) {
-  #facebook .box .imgbox {
-    margin-top: 50px;
-  }
+#facebook .four {
+  padding: 20px;
 }
 
 #website {
-  padding: 22px 0;
+  padding: 30px 0;
 }
 #website .menu a {
-  color: #414141;
-  font-size: 19px;
+  color: #535151;
+  font-size: 17px;
 }
 #website .menu span {
   margin: 0 20px;
@@ -542,24 +554,29 @@ header .menu nav a {
   display: flex;
   justify-content: center;
 }
+#website .menu ul li {
+  margin: 0 10px;
+}
 #website .menu ul li .icon {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #1a1919;
-  color: white;
-  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 12px;
+  cursor: pointer;
+  font-size: 16px;
   width: 40px;
   height: 40px;
+  border-radius: 40px;
+  background-color: #1f1e1e;
+  color: white;
 }
 #website .menu ul li .icon:hover {
   background-color: #424649;
   transition: 0.5s;
 }
-@media screen and (max-width: 768px) {
+#website .menu ul li .icon i {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
   #website .menu {
     display: flex;
     flex-direction: column;
