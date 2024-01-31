@@ -18,6 +18,9 @@ a:hover {
   cursor: pointer;
 }
 
+header {
+  z-index: 2;
+}
 header .menu {
   position: fixed;
   display: flex;
@@ -28,7 +31,7 @@ header .menu {
   padding: 10px 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 header .menu .imgbox {
   margin-left: 90px;
@@ -338,7 +341,7 @@ header .menu nav a {
 #about .textbox h1:hover {
   cursor: text;
 }
-#about .textbox h3 {
+#about .textbox h4 {
   font-size: 18px;
   color: #6c757d;
   font-weight: 400;
@@ -346,7 +349,6 @@ header .menu nav a {
   margin: 0 0 50px;
 }
 #about .box {
-  margin: 50px 0;
   position: relative;
 }
 #about .box .textbox {
@@ -366,14 +368,13 @@ header .menu nav a {
 }
 #about .box .imgbox {
   position: absolute;
-  left: 43%;
   width: 170px;
   height: 170px;
   border: solid #e9ecef;
   border-width: 6px;
   border-radius: 100%;
 }
-#about .last-box {
+#about .boxfive {
   width: 170px;
   height: 170px;
   border: solid #e9ecef;
@@ -381,7 +382,7 @@ header .menu nav a {
   border-radius: 100%;
   background-color: #ffc800;
 }
-#about .last-box h4 {
+#about .boxfive h5 {
   margin: 0 0 8px 0;
   color: #ffffff;
   font-size: 24px;
@@ -392,7 +393,7 @@ header .menu nav a {
     width: 150px;
     height: 150px;
   }
-  #about .last-box {
+  #about .boxfive {
     width: 150px;
     height: 150px;
   }
@@ -402,11 +403,11 @@ header .menu nav a {
     width: 100px;
     height: 100px;
   }
-  #about .last-box {
+  #about .boxfive {
     width: 100px;
     height: 100px;
   }
-  #about .last-box h4 {
+  #about .boxfive h5 {
     font-size: 16px;
     margin: 0 0 5px 0;
   }
@@ -424,11 +425,11 @@ header .menu nav a {
     margin-left: 80px;
     width: 100%;
   }
-  #about .last-box {
+  #about .boxfive {
     width: 80px;
     height: 80px;
   }
-  #about .last-box h4 {
+  #about .boxfive h5 {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
