@@ -3,10 +3,10 @@ body {
   font-weight: 500;
 }
 
-a {
+nav {
   color: orange;
 }
-a:hover {
+nav:hover {
   color: #ecd544;
 }
 
@@ -45,6 +45,9 @@ header .menu nav a {
   padding-right: 30px;
   letter-spacing: 1px;
   cursor: pointer;
+}
+header .menu nav a:hover {
+  color: #ecd544;
 }
 @media screen and (max-width: 300px) {
   header {
@@ -525,19 +528,24 @@ header .menu nav a {
 }
 
 #facebook {
-  padding: 50px 0;
+  padding: 60px 0;
 }
-#facebook img {
-  cursor: pointer;
+#facebook .box {
+  padding: 0 50px;
 }
-#facebook .imgbox {
-  width: 180px;
+#facebook .box .imgbox {
+  width: 120px;
 }
-#facebook .three {
-  width: 150px;
+#facebook .box .microsoft {
+  width: 200px;
 }
-#facebook .four {
-  padding: 20px;
+#facebook .box .ibm {
+  width: 100px;
+}
+@media screen and (max-width: 576px) {
+  #facebook .box .imgbox {
+    margin-top: 50px;
+  }
 }
 
 #website {
@@ -602,6 +610,7 @@ header .menu nav a {
 }
 #contact .textbox h3 {
   color: #757575;
+  font-style: italic;
   padding-bottom: 35px;
 }
 #contact .box {
