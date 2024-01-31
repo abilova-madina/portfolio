@@ -3,9 +3,12 @@
     .textbox
         text-align: center
         h2
+
             font-size: 45px
             font-weight: 700
             padding-bottom: 15px
+            &:hover
+                cursor: text
         h4
             color: #6a6a6a
             padding-bottom: 45px
@@ -46,6 +49,9 @@
         font-size: 55px
         color: #ffff
 
+    .box,.textbox
+        overflow: hidden
+
     .textbox
         h3
             font-size: 27px
@@ -55,6 +61,9 @@
             font-size: 17px
             color: #6a6a6a
             line-height: 1.4
+        h3,h6
+            &:hover
+                cursor: text
 
     @media screen and ( max-width: 602px )
         .textbox
@@ -63,3 +72,8 @@
 
             h6
                 padding-bottom: 25px
+
+    @media screen and ( max-width: 767px )
+        .textbox
+            h6
+                margin-bottom: 30px
