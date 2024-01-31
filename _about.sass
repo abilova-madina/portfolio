@@ -1,163 +1,88 @@
 #about
-    padding-bottom: 50px
-    .box, .bigbox
-        padding: 10px 0 55px
+    padding: 100px 0
+    .textbox
+        overflow: hidden
         h1
-            font-size: 45px
-            padding: 45px 0 15px
+            font-size: 48px
             font-weight: 700
+            margin: 0 0 20px
             &:hover
                 cursor: text
-        h4
-            color: #969696
-            font-style: italic
-            font-size: 20px
-        h2
-            font-size: 25px
-            font-weight: 600
-            padding-bottom: 10px
-            margin: 0 110px
-
         h3
-            font-size: 30px
-            font-weight: 700
-            padding-bottom: 15px
-            margin: 0 110px
+            font-size: 18px
+            color: #6c757d
+            font-weight: 400
+            font-style: italic
+            margin: 0 0 50px
 
-        h5
-            font-size: 19px
-            color: #969696
-            line-height: 1.8
-            margin: 0 110px
-
-        h6
-            font-size: 19px
-            color: #969696
-            line-height: 1.5
-            margin: 0 110px
-
-    .imgbox
-        position: absolute
-        left: 44%
+    .box
+        margin: 50px 0
+        position: relative
+        .textbox
+            width: 41%
+            padding: 0 20px 20px 20px
+            h2
+                font-size: 28px
+                font-weight: 700
+                line-height: 1.5
+            p
+                color: #6c757d
+                margin: 10px 0
+                font-size: 19px
+                line-height: 1.5
+        .imgbox
+            position: absolute
+            left: 43%
+            width: 170px
+            height: 170px
+            border: solid #e9ecef
+            border-width: 6px
+            border-radius: 100%
+    .last-box
         width: 170px
         height: 170px
-        border: 7px solid #e9ecef
-        border-radius: 50%
-        overflow: hidden
-
-    // .demoone
-    //     display: flex
-    //     justify-content: center
-    //     .boxfive
-    //         padding-top: 30px
-    //         width: 170px
-    //         height: 170px
-    //         border: 7px solid #e9ecef
-    //         border-radius: 50%
-    //         background-color: #ffc800
-
-    //     h5
-    //         color: #ffff
-    //         font-weight: 600
-    //         font-size: 25px
-    //         margin-left: 45px
-    //         margin-top: 5px
-
-    .demoone
-        // position: relative
-        // left: 480px
-        // width: 170px
-        // height: 170px
-        // border: solid #e9ecef
-        // border-width: 6px
-        // border-radius: 100%
-        // background-color: #ffc800
-        // // margin-left: 150px
-        // h5
-        //     margin: 0 0 8px 0
-        //     color: #ffffff
-        //     font-size: 24px
-        //     font-weight: 700
-
-    @media ( max-width: 299px )
-        .demoone
-            .boxfive
-                left: 0
-                top: 0
-        .imgbox
-            // margin-left: 20px
-            img
-                padding-left: 20px
-    @media  ( max-width: 768px )
-
+        border: solid #e9ecef
+        border-width: 6px
+        border-radius: 100%
+        background-color: #ffc800
+        h4
+            margin: 0 0 8px 0
+            color: #ffffff
+            font-size: 24px
+            font-weight: 700
+    @media (min-width: 992px) and (max-width: 1200px)
         .box
-            h2, h3, h5, h6
-                margin: 0 20px 0 110px
             .imgbox
-                left: 10px
-                width: 90px
-                height: 90px
-                border: 7px solid #e9ecef
-
-            .textone
-                h2, h3, h6
-                    text-align: start
-        .demoone
-            position: relative
-            // left: 10px
-            right: 35px
-            display: flex
-            justify-content: start
-
-            .boxfive
-                display: flex
-                flex-wrap: wrap
-                // padding-top: 306px
-                width: 90px
-                height: 90px
-                border: 7px solid #e9ecef
-
-            h5
-                display: flex
-                flex-wrap: wrap
-                color: #ffff
-                font-weight: 500
-                font-size: 17px
-                padding-right: 2
-                // margin-left: 45px
-                // margin-right: 74px
-                // margin-top: 5px
-                position: relative
-                right: 20px
-                bottom: 34px
-
-            // h5
-            //     top: 0
-            //     // font-weight: 600
-            //     font-size: 15px
-            //     position: relative
-            //     // bottom: 60%
-            //     right: 25px
-
-    @media ( min-width: 769px ) and ( max-width: 994px )
+                width: 150px
+                height: 150px
+        .last-box
+            width: 150px
+            height: 150px
+    @media (min-width: 768px) and (max-width: 992px)
         .box
-            h2, h3, h5, h6
-                margin: 0 50px
-
             .imgbox
                 width: 100px
                 height: 100px
-                border: 7px solid #e9ecef
-        // .demoone
-        //     .boxfive
-        //         // padding-top: 30px
-        //         width: 100px
-        //         height: 100px
-        //         border: 7px solid #e9ecef
-
-        //     h5
-        //         font-weight: 600
-        //         font-size: 15px
-        //         position: relative
-        //         bottom: 30%
-        //         right: 25%
+        .last-box
+            width: 100px
+            height: 100px
+            h4
+                font-size: 16px
+                margin: 0 0 5px 0
+    @media (max-width: 767px)
+        .box
+            margin: 0
+            .imgbox
+                width: 80px
+                height: 80px
+                left: 0%
+            .textbox
+                margin-left: 80px
+                width: 100%
+        .last-box
+            width: 80px
+            height: 80px
+            h4
+                font-size: 14px
+                font-weight: normal
+                margin: 0
