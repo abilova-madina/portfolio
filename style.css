@@ -18,77 +18,52 @@ nav:hover {
   cursor: pointer;
 }
 
-header {
-  z-index: 2;
-}
 header .menu {
-  position: fixed;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #212529;
-  height: 80px;
-  padding: 10px 0;
-  left: 0;
-  right: 0;
+  padding: 0 8%;
+  position: fixed;
   z-index: 2;
+  width: 100%;
+  height: 80px;
+  left: 0%;
+  background-color: #212529;
 }
 header .menu .imgbox {
-  margin-left: 90px;
-  width: 150px;
-}
-header .menu nav {
-  margin-right: 75px;
+  width: 140px;
 }
 header .menu nav a {
-  color: white;
-  padding-right: 30px;
+  font-weight: 300;
+  margin-left: 30px;
   letter-spacing: 1px;
-  cursor: pointer;
+  color: #ffffff;
+  transition: 0.2s;
 }
 header .menu nav a:hover {
-  color: #ecd544;
-}
-@media screen and (max-width: 300px) {
-  header {
-    position: fixed;
-    width: 47%;
-    height: 70px;
-  }
-  header .imgbox {
-    width: 130px;
-  }
-}
-@media screen and (max-width: 900px) {
-  header {
-    position: fixed;
-  }
-  header nav a {
-    display: none;
-  }
+  cursor: pointer;
+  color: #ffc800;
 }
 @media (max-width: 992px) {
   header nav {
     display: none;
   }
   header .menu .btn {
-    font-weight: 500;
-    margin-right: 55px;
     display: flex;
-    justify-content: between;
-    align-items: center;
-    border-radius: 5px;
+    color: #979d9e;
     font-size: 12px;
-    color: #9999ad;
-    padding: 7px 14px;
-    font-weight: 600;
-    border: 1px solid #9999ad;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: solid #5a5e65;
+    border-width: 1px;
+    border-radius: 6px;
   }
-  header .menu .btn h2 {
-    padding-right: 7px;
+  header .menu .btn h1 {
+    margin-right: 6px;
   }
-  header .menu .imgbox {
-    margin-left: 50px;
+}
+@media (max-width: 576px) and (min-width: 280px) {
+  header .menu {
+    padding: 0 20px;
   }
 }
 @media (max-width: 280px) {
@@ -100,11 +75,6 @@ header .menu nav a:hover {
   }
   header .menu .imgbox {
     margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  header {
-    width: 100vw;
   }
 }
 
@@ -371,7 +341,7 @@ header .menu nav a:hover {
 }
 #about .box .imgbox {
   position: absolute;
-  left: 470px;
+  left: 300px;
   width: 170px;
   height: 170px;
   border: solid #e9ecef;
@@ -441,97 +411,79 @@ header .menu nav a:hover {
 }
 
 #team {
-  background-color: #f6f6f6;
-  padding: 90px 75px;
+  background-color: #f8f9fa;
+  padding: 100px 0;
 }
 #team .textbox {
-  text-align: center;
+  overflow: hidden;
 }
-#team .textbox h2 {
-  font-size: 30px;
+#team .textbox h1 {
+  font-size: 42px;
   font-weight: 700;
-  padding: 25px 0 10px;
+  margin: 0 0 20px;
 }
-#team .textbox h3 {
-  font-size: 45px;
-  font-weight: 700;
-  padding: 20px 0;
-}
-#team .textbox h3:hover {
+#team .textbox h1:hover {
   cursor: text;
 }
-#team .textbox h4 {
-  color: #969696;
+#team .textbox h3 {
   font-size: 18px;
-  padding-bottom: 60px;
+  color: #6c757d;
+  font-weight: 500;
   font-style: italic;
+  margin: 0 0 50px;
 }
-#team .textbox h5 {
-  color: #969696;
-  font-size: 18px;
-  padding-bottom: 10px;
+#team .box {
+  overflow: hidden;
 }
-#team .textbox p {
+#team .box .imgbox {
+  width: 220px;
+  border: solid #e9ecef;
+  border-radius: 50%;
+  border-width: 8px;
+  margin-bottom: 20px;
+}
+#team .box .textbox h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px 0 10px;
+}
+#team .box .textbox h4 {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+#team .box .icon, #team .box .facebook {
+  background-color: #212529;
+  color: #fff;
+  font-size: 14px;
+  padding: 14px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#team .box .icon:hover, #team .box .facebook:hover {
+  opacity: 70%;
+}
+#team .box .icon i, #team .box .facebook i {
+  cursor: pointer;
+}
+#team .box .facebook {
+  padding: 14px 16px 14px 16px;
+}
+#team .demotext p {
   width: 70%;
   color: #6c757d;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
   margin: 0 auto;
-  padding-top: 60px;
-}
-#team .box .textbox {
-  text-align: center;
-  margin: 15px 0;
-}
-#team .box .imgbox {
-  width: 220px;
-}
-#team .box .imgbox img {
-  border-radius: 100%;
-  border: 8px solid #dfe0e1;
-}
-#team .box ul {
-  display: flex;
-  justify-content: center;
-}
-#team .box ul li {
-  margin: 9px;
-}
-#team .box ul li .icon {
-  border-radius: 40px;
-  background-color: #1f1e1e;
-  cursor: pointer;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  font-size: 16px;
-  cursor: pointer;
-}
-#team .box ul li .icon:hover {
-  background-color: #424649;
-  transition: 0.5s;
-}
-#team .box ul li .icon i {
-  cursor: pointer;
-}
-@media (max-width: 999px) {
-  #team .textbox p {
-    padding: 62px 0;
-  }
-  #team .box .imgbox {
-    margin-top: 25px;
-  }
 }
 
 #facebook {
-  padding: 60px 0;
-}
-#facebook .box {
-  padding: 0 50px;
+  padding: 50px 0;
 }
 #facebook .box .imgbox {
   width: 120px;
@@ -542,9 +494,9 @@ header .menu nav a:hover {
 #facebook .box .ibm {
   width: 100px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   #facebook .box .imgbox {
-    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -621,7 +573,7 @@ header .menu nav a:hover {
   font-size: 18px;
   padding: 20px;
   width: 100%;
-  margin: 0 0 25px;
+  margin-top: 20px;
   font-weight: 700;
 }
 #contact .demo input {
@@ -644,7 +596,9 @@ header .menu nav a:hover {
   #contact {
     background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
   }
+}
+@media screen and (max-width: 766px) {
   #contact .box .btn {
-    margin: 56px 45px 0;
+    margin: 56px 0;
   }
 }/*# sourceMappingURL=style.css.map */

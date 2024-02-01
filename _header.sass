@@ -1,64 +1,44 @@
 header
-    z-index: 2
     .menu
-        position: fixed
-        display: flex
         justify-content: space-between
         align-items: center
-        background-color: #212529
-        height: 80px
-        padding: 10px 0
-        left: 0
-        right: 0
+        padding: 0 8%
+        position: fixed
         z-index: 2
+        width: 100%
+        height: 80px
+        left: 0%
+        background-color: #212529
         .imgbox
-            margin-left: 90px
-            width: 150px
+            width: 140px
         nav
-            margin-right: 75px
             a
-                color: #ffff
-                padding-right: 30px
+                font-weight: 300
+                margin-left: 30px
                 letter-spacing: 1px
-                // margin-right: 30px
-                cursor: pointer
+                color: #ffffff
+                transition: 0.2s
                 &:hover
-                    color: #ecd544
-
-    @media screen and ( max-width: 300px  )
-        position: fixed
-        width: 47%
-        height: 70px
-        .imgbox
-            width: 130px
-
-    @media screen and ( max-width: 900px )
-        position: fixed
-        nav
-            a
-                display: none
-
+                    cursor: pointer
+                    color: #ffc800
     @media (max-width: 992px)
         nav
             display: none
         .menu
             .btn
-                font-weight: 500
-                margin-right: 55px
                 display: flex
-                justify-content: between
-                align-items: center
-                border-radius: 5px
+                color: #979d9e
                 font-size: 12px
-                color: #9999ad
-                padding: 7px 14px
-                font-weight: 600
-                border: 1px solid #9999ad
-                h2
-                    padding-right: 7px
-            .imgbox
-                margin-left: 50px
-
+                font-weight: 500
+                padding: 6px 12px
+                border: solid #5a5e65
+                border-width: 1px
+                border-radius: 6px
+                h1
+                    margin-right: 6px
+    @media (max-width: 576px) and (min-width: 280px)
+        .menu
+            padding: 0 20px
     @media (max-width: 280px)
         .menu
             height: 100px
@@ -67,6 +47,3 @@ header
             justify-content: center
             .imgbox
                 margin-bottom: 10px
-
-    @media screen and ( max-width: 768px  )
-        width: 100vw
